@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="description" content="My Add movie">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/movie.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300">
+
+    <title>Add Movie</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/projector-logo.png">
+      <nav>
+        <ul class="fright">
+           <li><a href ="#"> HOME </a></li>
+           <li><a href="#">Add movie </a></li>
+         </ul>
+      </nav>
+    </header>
+
+    <div class="clearfix"></div>
+
+<form class="movieform" action="/sample-action">
+    <h2>Add a Movie</h2>
+    <ul>
+      <li>
+        <label for="movie-name">Movie Name</label>
+          <input id="movie-name" type="text" name="movie-name"/>
+      </li>
+
+      <li>
+        <label for="release-yr">Release Year</label>
+          <input type="text" name="release-yr"/>
+      </li>
+    <li>
+        <label for="Language">Language</label>
+      <select class=""name="Language">
+            <option value="">Tamil</option>
+            <option value="">English</option>
+            <option value="">Hindi</option>
+      </select>
+    </li>
+  <li>
+        <label for="Rating">Rating</label>
+      <select class=""name="Rating">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+
+      </select>
+    </li>
+
+    <li>
+      <label for="Thumbnail">ThumbnailURL</label>
+       <input id="Thumbnail" type="url" name="Thumbnail"required/>
+     </li>
+     <li>
+       <label for="Plot">Plot</label>
+        <textarea name="plot" rows="8" cols="80"></textarea>
+      </li>
+      <li>
+        <label for="PosterURL">PosterURL</label>
+         <input id="Poster" type="url" name="PosterURL"required/>
+       </li>
+       <li>
+         <label for="Cast">Cast</label>
+          <textarea name="cast" rows="8" cols="80"></textarea>
+        </li>
+        <li>
+        <center>  <input class="button" type="button" name="Save" value="save" required>
+        </li>
+
+
+    </ul>
+  </form>
+  <footer>
+    <img class="logo" src="./images/projector-logo.png">
+
+  </footer>
+
+  </body>
+</html>
